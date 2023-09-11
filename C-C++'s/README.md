@@ -1,4 +1,4 @@
-أتعلم C/C++ من الزيرو , cs50 , ALX
+أتعلم C/C++ من الزيرو , CS50 , ALX
 
 #include <stdio.h>
 #include <iostream>
