@@ -1,3 +1,5 @@
+أتعلم C/C++ من الزيرو , cs50 , ALX
+
 #include <stdio.h>
 #include <iostream>
 int main()
