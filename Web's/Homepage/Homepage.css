@@ -104,8 +104,8 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 62.5%;
+    width: 500px;
+    height: 550px;
     border-style: solid;
     border-color: black;
     box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
@@ -113,6 +113,7 @@ input {
 }
 
 @media (min-width: 1153px) and (max-width: 1359px) {
+
     a {
         margin: 9.875px;
     }
@@ -124,12 +125,17 @@ input {
 }
 
 @media (max-width: 1152px) {
+
     a {
         margin: 0px;
     }
 
     a:hover {
         font-size: 107.5%;
+    }
+
+    .more, .add {
+        font-size: 35px;
     }
 
 }
