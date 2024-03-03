@@ -56,11 +56,60 @@ a:hover {
     100% {bottom: 0px;}
 }
 
-.more {
+.last {
     position: relative;
-    color: red;
+    display: block;
     text-decoration: none;
-    bottom: 20px;
+    bottom: 60px;
+}
+
+.more {
+    position: absolute;
+    color: red;
+    left: 20px;
+}
+
+.add {
+    position: absolute;
+    color: darkslateblue;
+    right: 20px;
+}
+
+select, button{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+
+input {
+    width: 50%;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25px;
+    right: 0px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.plus {
+    position: fixed;
+    display: none;
+    background-color: white;
+    font-size: 30px;
+    direction: rtl;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 62.5%;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
+
 }
 
 @media (min-width: 1153px) and (max-width: 1359px) {

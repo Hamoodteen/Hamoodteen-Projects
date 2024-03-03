@@ -15,13 +15,35 @@
 
 <body>
     <center>
+        <div class="plus">
+            <span class="close" title="اغلاق المربع">X</span><br>
+            <p>
+                الفئة التي تريد إضافة الموقع لها :<br>
+                <select required>
+                    <option value="تصفح الويب">تصفح الويب</option>
+                    <option value="الدردشة و التواصل">الدردشة و التواصل</option>
+                    <option value="الأخبار و الفيديوهات">الأخبار و الفيديوهات</option>
+                    <option value="متاجر التطبيقات و الألعاب">متاجر التطبيقات و الألعاب</option>
+                    <option value="خدمات التخرين السحابي">خدمات التخرين السحابي</option>
+                    <option value="الذكاء الإصطناعي">الذكاء الإصطناعي</option>
+                    <option value="الفئة المخصصة لك">الفئة المخصصة لك</option>
+                </select><br><br>
+                اسم الموقع :<br>
+                <input type="text" required><br><br>
+                عنوان الموقع (أدخل البروتوكول)<br>
+                <input type="url" required><br><br>
+                وصف للموقع (اختياري) :<br>
+                <input type="text"><br><br>
+                <button value="حفظ">حفظ</button>
+            </p>
+        </div>
         <font face="Traditional Arabic" size="72" color="red">
             <b class="what">ماذا تريد أن تفعل؟</b>
             <br><br>
         </font>
         <font face="Traditional Arabic" size="72" color="black">
             <b>هل تريد تصفح الإنترنت ورؤية كل ما هو جديد؟ فقط انقر</b>
-            <font color="blue">
+            <font class = "url1" color="blue">
                 <br><br>
                 <a href="https://www.google.com" target="_blank"
                     title="محرك بحث للتصفح, ويمكن من خلاله استخدام خدمات جوجل المختلفة">
@@ -42,8 +64,8 @@
             </font>
             <br><br>
             <b>أم أنك تريد الدردشة والتواصل مع أصدقاءك؟ فقط انقر</b>
-            <br><br>
-            <font color="green">
+            <font class = "url2" color="green">
+                <br><br>
                 <a href="https://www.facebook.com" target="_blank"
                     title="موقع للتواصل الإجتماعي, يمكن من خلاله الدردشة ونشر الصور والفيديوهات والإعجابات باستخدام حساب">
                     <img src="Facebook.jpg" alt="Facebook">
@@ -63,8 +85,8 @@
             </font>
             <br><br>
             <b>ربما تريد متابعة الأخبار ومشاهدة الفيديوهات الجديدة. فقط انقر</b>
-            <br><br>
-            <font color="purple">
+            <font class = "url3" color="purple">
+                <br><br>
                 <a href="https://www.youtube.com" target="_blank"
                     title="موقع لمشاهدة الفيديوهات والتعليق عليها, يمكن من خلاله نشر الفيديوهات باستخدام حساب وقناة">
                     <img src="Youtube.jpg" alt="Youtube">
@@ -80,8 +102,8 @@
             </font>
             <br><br>
             <b>يمكنك أيضًا شراء وتنزيل التطبيقات والألعاب و كل ما تريد. فقط انقر</b>
-            <br><br>
-            <font color="olive">
+            <font class = "url4" color="olive">
+                <br><br>
                 <a href="https://play.google.com/store" target="_blank"
                     title="متجر من شركة جوجل, يمكن من خلاله شراء وتنزيل التطبيقات والألعاب وغيرها لأي جهاز يعمل بنظام أندرويد">
                     <img src="GooglePlay.jpg" alt="Google Play">
@@ -97,8 +119,8 @@
             </font>
             <br><br>
             <b>ولا تنس مواقع التخزين السحابية التي يمكنك تخزين ملفاتك بها. فقط انقر</b>
-            <br><br>
-            <font color="deepskyblue">
+            <font class = "url5" color="deepskyblue">
+                <br><br>
                 <a href="https://www.icloud.com" target="_blank"
                     title="موقع تخزين سحابي من شركة آبل, يمكن من خلاله تخزين ما تريده من الملفات باستخدام حسابك">
                     <img src="ICloud.jpg" alt="ICloud">
@@ -113,10 +135,37 @@
                     One Drive</a>
             </font>
             <br><br>
-            <font face="Traditional Arabic" size="72">
-                <a href="Homepage.7z" title="معلومات عن الصفحة">
-                    <b class="more">انقر هنا لمعرفة المزيد</b></a>
+            <b>وأدوات الذكاء الإصطناعي لتسهل عليك مهامك و تزيد انتاجيتك. فقط انقر</b>
+            <font class = "url6" color="brown">
+                <br><br>
+                <a href="https://chat.openai.com" target="_blank"
+                    title="نموذج لغوي من شركة أوبن إي آي , سريع و خفيف و دقيق و به سجل محادثاتك معه">
+                    <img src="ChatGPT.jpg" alt="ChatGPT">
+                    ChatGPT</a>
+                <a href="https://gemini.google.com" target="_blank"
+                    title="نموذج قوي من شركة جوجل سريع التطور و محدث دائما , قادر على الإستجابة للصور">
+                    <img src="Gemini.jpg" alt="Gemini">
+                    Gemini</a>
+                <a href="https://copilot.microsoft.com" target="_blank"
+                    title="نموذج من شركة مايكروسوفت يوازن بين الإبداع و الدقة , قادر على إنشاء الصور">
+                    <img src="Copilot.jpg" alt="Copilot">
+                    Copilot</a>
             </font>
+            <br><br>
+            <b>مواقعك المخصصة</b>
+            <font class = "url7" color="black">
+                <br><br>
+            </font>
+        </font>
+    </center>
+    <br><br>
+    <font class="last" face="Traditional Arabic" size="72">
+        <a href="Homepage.7z" title="معلومات عن الصفحة">
+            <b class="more">انقر هنا لمعرفة المزيد</b></a>
+        <a href="#a" title="معلومات عن الصفحة">
+            <b class="add">انقر هنا لإضافة مواقع أخرى</b></a>
+    </font>
+    <script src="Homepage.js"></script>
 </body>
 
 </html>
