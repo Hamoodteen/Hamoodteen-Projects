@@ -142,17 +142,6 @@ input {
 
 }
 
-@media (min-width: 1360px) {
-
-    .plus {
-        font-size: 30px;
-        width: 650px;
-        height: 700px;
-        box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
-    }
-
-}
-
 @media (min-width: 1153px) and (max-width: 1359px) {
 
     a {
