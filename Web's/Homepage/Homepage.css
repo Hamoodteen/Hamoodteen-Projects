@@ -25,6 +25,13 @@ body {
     border-radius: 10px;
 }
 
+header, main, footer {
+    font-family: 'Traditional Arabic';
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+}
+
 a {
     margin: 0px 12px;
     display: inline-block;
@@ -48,6 +55,7 @@ a:hover {
 }
 
 .what {
+    color: red;
     text-shadow: 5px 5px 10px #ff0000b0;
     position: relative;
     animation-name: what;
@@ -67,6 +75,14 @@ a:hover {
         bottom: 0px;
     }
 }
+
+.url1 {color: blue;}
+.url2 {color: green;}
+.url3 {color: purple;}
+.url4 {color: olive;}
+.url5 {color: deepskyblue;}
+.url6 {color: brown;}
+.url7 {color: darkslateblue;}
 
 .last {
     position: relative;
@@ -112,7 +128,8 @@ input {
     position: fixed;
     display: none;
     background-color: white;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: bold;
     direction: rtl;
     top: 50%;
     left: 50%;
@@ -128,7 +145,7 @@ input {
 @media (min-width: 1360px) {
 
     .plus {
-        font-size: 50px;
+        font-size: 40px;
         width: 800px;
         height: 900px;
         box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
