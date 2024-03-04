@@ -1,0 +1,172 @@
+html {
+    /* scrollbar in FireFox */
+    scrollbar-color: blue white;
+    scrollbar-width: 12px !important;
+}
+
+/* scrollbar in other browsers */
+::-webkit-scrollbar {
+    background-color: white;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: blue;
+}
+
+body {
+    background-color: azure;
+    outline: skyblue groove 5px;
+    border-radius: 10px;
+}
+
+header, main, footer {
+    font-family: 'Traditional Arabic';
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    margin: 0px 12px;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+img {
+    height: 85px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover {
+    font-size: 115%;
+    transition-duration: 0.5s;
+    text-shadow: 8px 8px 10px #505050;
+}
+
+.what {
+    color: red;
+    text-shadow: 5px 5px 10px #ff0000b0;
+    position: relative;
+    animation-name: what;
+    animation-duration: 1.5s;
+}
+
+@keyframes what {
+    0% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: -25px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.url1 {color: blue;}
+.url2 {color: green;}
+.url3 {color: purple;}
+.url4 {color: olive;}
+.url5 {color: deepskyblue;}
+.url6 {color: brown;}
+.url7 {color: darkslateblue;}
+
+.last {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    bottom: 60px;
+}
+
+.more {
+    position: absolute;
+    color: red;
+    left: 20px;
+}
+
+.add {
+    position: absolute;
+    color: darkslateblue;
+    right: 20px;
+}
+
+select,
+button {
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+
+input {
+    width: 50%;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25px;
+    right: 0px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.plus {
+    position: fixed;
+    display: none;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    direction: rtl;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 600px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
+
+}
+
+@media (min-width: 1153px) and (max-width: 1359px) {
+
+    a {
+        margin: 9.875px;
+    }
+
+    a:hover {
+        font-size: 109.375%;
+    }
+
+}
+
+@media (max-width: 1152px) {
+
+    a {
+        margin: 9px;
+    }
+
+    a:hover {
+        font-size: 100%;
+    }
+
+    .more,
+    .add {
+        font-size: 28px;
+    }
+
+}
