@@ -17,11 +17,25 @@ function template(url, name, title, urlclass) {
     crd.title = title;
 
     let img = document.createElement('img');
-    img.src = `${url}/favicon.ico`;
+    img.style.height = "85px";
+
+    function correctURL(curl) {
+        const inputString = curl;
+        const letterToSplit = '/';
+        const splitArray = inputString.split(letterToSplit);
+        const splittedString = splitArray.slice(0, 3).join(letterToSplit);
+        return splittedString;
+    }
+    if (url.split('').filter(char => char === '/').length >= 3) {
+        img.src = `${correctURL(url)}/favicon.ico`;
+    } else {
+        img.src = `${url}/favicon.ico`;
+    }
+
     img.alt = name;
     crd.appendChild(img);
 
-    crd.style.margin = "9.875px";
+    crd.style.margin = "0px 12px";
 
     let nameNode = document.createTextNode(name);
     crd.appendChild(nameNode);

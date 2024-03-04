@@ -31,6 +31,10 @@ a {
     transition-duration: 0.5s;
 }
 
+img {
+    height: 85px;
+}
+
 a:link,
 a:visited {
     text-decoration: none;
@@ -51,9 +55,17 @@ a:hover {
 }
 
 @keyframes what {
-    0% {bottom: 100px;}
-    50% {bottom: -25px;}
-    100% {bottom: 0px;}
+    0% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: -25px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
 }
 
 .last {
@@ -75,7 +87,8 @@ a:hover {
     right: 20px;
 }
 
-select, button{
+select,
+button {
     width: 50%;
     height: 100%;
     font-size: 20px;
@@ -112,6 +125,17 @@ input {
 
 }
 
+@media (min-width: 1360px) {
+
+    .plus {
+        font-size: 50px;
+        width: 800px;
+        height: 900px;
+        box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
 @media (min-width: 1153px) and (max-width: 1359px) {
 
     a {
@@ -127,15 +151,16 @@ input {
 @media (max-width: 1152px) {
 
     a {
-        margin: 0px;
+        margin: 9px;
     }
 
     a:hover {
-        font-size: 107.5%;
+        font-size: 100%;
     }
 
-    .more, .add {
-        font-size: 35px;
+    .more,
+    .add {
+        font-size: 28px;
     }
 
 }
