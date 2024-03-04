@@ -145,9 +145,9 @@ input {
 @media (min-width: 1360px) {
 
     .plus {
-        font-size: 40px;
-        width: 800px;
-        height: 900px;
+        font-size: 30px;
+        width: 650px;
+        height: 700px;
         box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
     }
 
