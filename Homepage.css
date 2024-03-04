@@ -134,8 +134,8 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 550px;
+    width: 550px;
+    height: 600px;
     border-style: solid;
     border-color: black;
     box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
