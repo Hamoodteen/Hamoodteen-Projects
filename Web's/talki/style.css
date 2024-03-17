@@ -1,0 +1,463 @@
+html, body {
+    height: 99vh;
+    overflow: hidden !important;
+}
+
+header {
+    text-align: center;
+    color: goldenrod;
+    animation: animate 1s ease;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {}
+}
+
+#two {
+    transform: translateX(105%);
+}
+
+@keyframes create {
+    from {}
+    to {
+        transform: translateX(-1300%);
+    }
+}
+
+@keyframes created {
+    from {}
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes createback {
+    from {
+        transform: translateX(1300%);
+    }
+    to {
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes createdback {
+    from {
+        transform: translateX(-1000%);
+    }
+    to {}
+}
+
+input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
+    position: absolute;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 8%;
+    font-size: 25px;
+    width: 30%;
+    transition: border-bottom 0.2s linear;
+}
+
+@media (min-height: 1080px) {
+
+    input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
+        padding: 14px;
+        margin-top: 7%;
+        font-size: 24px;
+    }
+
+    input[name="log-email"] {
+        left: 10%;
+    }
+    
+    input[name="log-password"] {
+        right: 10%;
+    }
+
+
+    #remember-log {top: 40cap;}
+
+    #remember-sign {top: 30cap;}
+
+    input[name="log-submit"] {top: 18cap;}
+
+    input[name="sign-name"] {top: 1cap;}
+    
+    input[name="tel"] {top: 1cap;}
+    
+    input[name="sign-email"] {top: 7cap;}
+    
+    input[name="sign-password"] {top: 7cap;}
+    
+    input[name="sign-confirm"] {top: 13cap;}
+
+    label[for="image"] {top: 18cap;}
+
+    input[name="sign-submit"] {top: 22.5cap;}
+
+    .via {
+        top: 25cap;
+        font-size: xx-large;
+    }
+
+    footer {height: 15%;}
+
+    #Facebook, #Google {
+        padding: 15px;
+        top: 48cap;
+    }
+
+    .account {font-size: larger;}
+   
+}
+
+@media (min-height: 900px) and (max-height: 1079px) {
+
+    input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
+        padding: 10px;
+        margin-top: 4%;
+        font-size: 20px;
+    }
+
+    input[name="log-email"] {
+        left: 10%;
+    }
+    
+    input[name="log-password"] {
+        right: 10%;
+    }
+
+
+    #remember-log {top: 32cap;}
+
+    #remember-sign {top: 21cap;}
+
+    input[name="log-submit"] {top: 23cap;}
+
+    input[name="sign-name"] {top: 1cap;}
+    
+    input[name="tel"] {top: 1cap;}
+    
+    input[name="sign-email"] {top: 7cap;}
+    
+    input[name="sign-password"] {top: 7cap;}
+    
+    input[name="sign-confirm"] {top: 13cap;}
+
+    label[for="image"] {top: 13cap;}
+
+    input[name="sign-submit"] {top: 22.5cap;}
+
+    .via {
+        top: 35cap;
+        font-size: larger;
+    }
+
+    footer {height: 19%;}
+
+    #Facebook, #Google {
+        padding: 12px;
+        top: 40cap;
+    }
+
+}
+
+@media (max-height: 899px) {
+
+    input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
+        padding: 8px;
+        margin-top: 2%;
+        font-size: 15px;
+    }
+
+    input[name="log-email"] {
+        left: 10%;
+    }
+    
+    input[name="log-password"] {
+        right: 10%;
+    }
+
+    #remember-log {top: 28cap;}
+
+    #remember-sign {top: 14cap;}
+
+    input[name="log-submit"] {top: 25cap;}
+
+    input[name="sign-name"] {top: 0cap;}
+    
+    input[name="tel"] {top: 0cap;}
+    
+    input[name="sign-email"] {top: 5cap;}
+    
+    input[name="sign-password"] {top: 5cap;}
+    
+    input[name="sign-confirm"] {top: 10cap;}
+
+    label[for="image"] {top: 8cap;}
+
+    input[name="sign-submit"] {top: 19cap;}
+
+    .via {
+        top: 28cap;
+        font-size: larger;
+    }
+    
+    footer {height: 22%;}
+
+    #Facebook, #Google {
+        padding: 10px;
+        top: 33cap;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
+        padding: 10px;
+        margin-top: 4%;
+        font-size: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+    }
+
+    input[name="log-email"] {
+        top: 18cap;
+    }
+    
+    input[name="log-password"] {
+        top: 25cap;
+    }
+
+    #remember-log {
+        top: 28cap;
+    }
+
+    #remember-sign {
+        top: 18cap !important;
+    }
+
+    input[name="log-submit"] {
+        top: 32cap;
+    }
+
+    input[name="sign-name"] {
+        left: 50% !important;
+        top: 0cap !important;
+    }
+    
+    input[name="tel"] {
+        top: 5cap !important;
+    }
+    
+    input[name="sign-email"] {
+        left: 50% !important;
+        top: 10cap !important;
+    }
+    
+    input[name="sign-password"] {
+        top: 17cap !important;
+    }
+    
+    input[name="sign-confirm"] {
+        top: 22cap !important;
+    }
+
+    label[for="image"] {
+        top: 18cap !important;
+    }
+
+    input[name="sign-submit"] {
+        top: 38cap !important;
+    }
+
+    .via {
+        top: 38cap;
+        font-size: larger;
+    }
+    
+    footer {display: none;}
+
+    #Facebook, #Google{
+        padding: 10px;
+        margin: -50px;
+        top: 46cap;
+    }
+
+    .account {
+        top: 85% !important;
+        text-align: center;
+    }
+
+}
+
+#remember-log, #remember-sign {
+    position: absolute;
+    left: 10%;
+}
+
+input[name="log-submit"] {
+    background-color: #48FB77;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[name="sign-name"] {
+    left: 10%;
+    top: 1cap;
+}
+
+input[name="tel"] {
+    right: 10%;
+    top: 1cap;
+}
+
+input[name="sign-email"] {
+    left: 10%;
+    top: 7cap;
+}
+
+input[name="sign-password"] {
+    right: 10%;
+    top: 7cap;
+}
+
+input[name="sign-confirm"] {
+    right: 10%;
+    top: 13cap;
+}
+
+label[for="image"] {
+    position: absolute;
+    font-size: xx-large;
+    color: goldenrod;
+    left: 10%;
+}
+
+label[for="image"]::after {
+    content: attr(data-content);
+}
+
+input[name="sign-submit"] {
+    background-color: #48FB77;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22.5cap;
+}
+
+input:hover {
+    border-bottom: 7px solid goldenrod;
+    border-style: groove;
+}
+
+input[type="submit"]:hover {
+    border-bottom: 8px solid goldenrod;
+    border-left: 3px solid goldenrod;
+    border-right: 3px solid goldenrod;
+}
+
+.via {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back {
+    position: absolute;
+    top: -6cap;
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+#Facebook, #Google {
+    position: absolute;
+    color: azure;
+    font-size: large;
+}
+
+#Facebook {
+    left: 30%;
+    background-color: blue;
+}
+
+#Facebook::before {
+    content: url("facebook.png");
+}
+
+#Google {
+    right: 30%;
+    background-color: #DD0000;
+}
+
+#Google::before {
+    content: url("google.png");
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-shadow: 2px 2px 4px gold;
+}
+
+.account {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 66%;
+}
+
+.account h3 {
+    display: inline-block;
+}
+
+#create {
+    color: goldenrod;
+    display: inline;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    background-color: #E6EEFA;
+}
+
+.about {
+    position: absolute;
+    bottom: 0;
+    width: 22%;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact h1, .contact h5 {
+    transform: translateY(15px);
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    grid-template-rows: repeat(2, 30px);
+}
+
+.team {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+}

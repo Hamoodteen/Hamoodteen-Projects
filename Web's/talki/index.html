@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="chat.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery.js"></script>
+    <title>Talki</title>
+</head>
+<body>
+    <header>
+        <h1>Talki</h1><br>
+        <h2>Welcome to talki</h2>
+        <h2>Unleash Your Voice and expressions !</h2>
+    </header>
+    <main>
+        <div id="one">
+            <form action="home.html" method="post">
+                <input type="email" name="log-email" placeholder="email" required>
+                <label id="remember-log"><input type="checkbox" name="check">remember me</label>
+                <input type="password" name="log-password" placeholder="password" required>
+                <input type="submit" formaction="home.html" name="log-submit" id="log-submit" value="Log in !">
+            </form>
+            <p class="via">or via</p>
+            <button id="Facebook"><a href="https://facebook.com">  Facebook</a></button>
+            <button id="Google"><a href="https://google.com">  Google</a></button>
+            <div class="account">
+                <h3 id="have">Don't have account ?&nbsp&nbsp&nbsp&nbsp</h3><h3 id="create"><a href="#">Create account</a></h3>
+            </div>
+        </div>
+        <div id="two">
+            <button id="back">&lt;&lt;</button>
+            <form action="home.html" method="post">
+                <input type="text" name="sign-name" placeholder="name" required>
+                <input type="tel" name="tel" placeholder="phone number" required>
+                <input type="email" name="sign-email" placeholder="email" required>
+                <label id="remember-sign"><input type="checkbox" name="check">remember me</label>
+                <label for="image" style="cursor: pointer;">choose your picture<br></label>
+                <input type="file" id="image" name="image" accept="image/*" style="display: none;">
+                <input type="password" name="sign-password" placeholder="password" required>
+                <input type="password" name="sign-confirm" placeholder="confirm password" required>
+                <input type="submit" formaction="home.html" name="sign-submit" id="sign-submit" value="sign Up !">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <h1>About us</h1>
+            <h3>our project will provide you a smooth, reliable communication experience between people all over the world</h3>
+        </div>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <div class="links">
+                <p><a href="https://facebook.com" target="_blank">facebook</a></p>
+                <p><a href="https://whatsapp.com" target="_blank">whatsapp</a></p>
+                <p>email</p>
+                <p>phone</p>
+            </div>
+            <h5>Copyright <script>document.write(new Date().getFullYear());</script> talki.com</h5>
+        </div>
+        <div class="team">
+            <h1>Team</h1>
+            <p>Ahmed Mousa</p>
+            <p>Mostafa Elzoghbey</p>
+            <p>Ammay Elbadry</p>
+        </div>
+    </footer>
+</body>
+</html>
