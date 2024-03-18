@@ -269,7 +269,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     .via {
-        top: 33cap;
+        top: 35cap;
         font-size: larger;
     }
     
@@ -280,7 +280,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     #Facebook, #Google{
         padding: 10px;
         margin: -50px;
-        top: 42cap;
+        top: 45cap;
     }
 
     .account {
