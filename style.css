@@ -69,14 +69,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         font-size: 24px;
     }
 
-    input[name="log-email"] {
-        left: 10%;
-    }
+    input[name="log-email"] {left: 10%;}
     
-    input[name="log-password"] {
-        right: 10%;
-    }
-
+    input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 40cap;}
 
@@ -111,7 +106,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     .account {font-size: larger;}
-   
+
+	#back {top: -6cap !important;}
+
 }
 
 @media (min-height: 900px) and (max-height: 1079px) {
@@ -122,14 +119,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         font-size: 20px;
     }
 
-    input[name="log-email"] {
-        left: 10%;
-    }
+    input[name="log-email"] {left: 10%;}
     
-    input[name="log-password"] {
-        right: 10%;
-    }
-
+    input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 32cap;}
 
@@ -163,6 +155,8 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 40cap;
     }
 
+	#back {top: -6cap !important;}
+
 }
 
 @media (max-height: 899px) {
@@ -173,13 +167,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         font-size: 15px;
     }
 
-    input[name="log-email"] {
-        left: 10%;
-    }
+    input[name="log-email"] {left: 10%;}
     
-    input[name="log-password"] {
-        right: 10%;
-    }
+    input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 28cap;}
 
@@ -213,6 +203,8 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 33cap;
     }
 
+	#back {top: -6cap !important;}
+
 }
 
 @media (max-width: 1023px) {
@@ -235,15 +227,15 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     #remember-log {
-        top: 28cap;
+        top: 26cap;
     }
 
     #remember-sign {
-        top: 18cap !important;
+        top: 17cap !important;
     }
 
     input[name="log-submit"] {
-        top: 32cap;
+        top: 30cap;
     }
 
     input[name="sign-name"] {
@@ -269,30 +261,36 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     label[for="image"] {
-        top: 18cap !important;
+        top: 16cap !important;
     }
 
     input[name="sign-submit"] {
-        top: 38cap !important;
+        top: 33cap !important;
     }
 
     .via {
-        top: 38cap;
+        top: 33cap;
         font-size: larger;
     }
     
-    footer {display: none;}
+    footer {
+    display: none;
+    }
 
     #Facebook, #Google{
         padding: 10px;
         margin: -50px;
-        top: 46cap;
+        top: 42cap;
     }
 
     .account {
-        top: 85% !important;
+        top: 82% !important;
         text-align: center;
     }
+
+	#back {
+		top: -7.5cap !important;
+	}
 
 }
 
@@ -371,7 +369,6 @@ input[type="submit"]:hover {
 
 #back {
     position: absolute;
-    top: -6cap;
     color: goldenrod;
     font-size: xx-large;
 }
