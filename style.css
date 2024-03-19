@@ -212,9 +212,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
 }
 
 @media (max-width: 1023px) {
-	.unleash {
-		font-size: 18px;
-	}
+    .unleash {
+    font-size: 18px;
+    }
 
     input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
         padding: 10px;
@@ -234,11 +234,11 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     #remember-log {
-        top: 26cap;
+        top: 22cap;
     }
 
     #remember-sign {
-        top: 17cap !important;
+        top: 14cap !important;
     }
 
     input[name="log-submit"] {
@@ -268,7 +268,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     label[for="image"] {
-        top: 16cap !important;
+        top: 13cap !important;
     }
 
     input[name="sign-submit"] {
