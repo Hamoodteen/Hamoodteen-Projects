@@ -213,6 +213,10 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
 
 @media (max-width: 1023px) {
 
+    .unleash {
+        font-size: 18px !important;
+    }
+
     input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
         padding: 10px;
         margin-top: 4%;
@@ -293,7 +297,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     #back {
-        top: -7.5cap !important;
+        top: -6cap !important;
     }
 
 }
