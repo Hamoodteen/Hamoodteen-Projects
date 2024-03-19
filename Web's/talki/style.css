@@ -3,6 +3,10 @@ html, body {
     overflow: hidden !important;
 }
 
+* {
+	font-family: Arial, sans-serif !important;
+}
+
 header {
     text-align: center;
     color: goldenrod;
