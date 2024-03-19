@@ -1,10 +1,10 @@
+* {
+    font-family: Arial, sans-serif !important;
+}
+
 html, body {
     height: 99vh;
     overflow: hidden !important;
-}
-
-* {
-    font-family: Arial, sans-serif !important;
 }
 
 header {
