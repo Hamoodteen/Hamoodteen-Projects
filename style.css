@@ -212,9 +212,6 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
 }
 
 @media (max-width: 1023px) {
-        .unleash {
-                font-size: 18px;
-        }
 
     input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
         padding: 10px;
@@ -295,9 +292,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         text-align: center;
     }
 
-        #back {
-                top: -6cap !important;
-        }
+    #back {
+        top: -7.5cap !important;
+    }
 
 }
 
