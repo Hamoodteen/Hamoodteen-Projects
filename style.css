@@ -1,7 +1,3 @@
-* {
-    font-family: Arial, sans-serif !important;
-}
-
 html, body {
     height: 99vh;
     overflow: hidden !important;
@@ -212,6 +208,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
 }
 
 @media (max-width: 1023px) {
+    * {
+        font-family: Arial, sans-serif !important;
+    }
 
     .unleash {
         font-size: 18px !important;
