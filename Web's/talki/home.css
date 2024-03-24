@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+    background: linear-gradient(to right, #e0ecfd, whitesmoke);
+    overflow: hidden auto;
+}
+
+article {
+    display: none;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    background-color: #bad4fa;
+}
+
+@keyframes show {
+
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+}
+
+@keyframes hide {
+
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    height: 12.5%;
+    border-bottom: 10px groove #5790DF;
+}
+
+#X {
+    display: inline;
+    cursor: pointer;
+    font-size: xx-large;
+    background-color: #5790DF;
+    color: white;
+    padding: 5px;
+    height: 50%;
+    align-self: center;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+.current-user {
+    width: 45%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    background-color: #5790DF;
+    border-left: 5px groove goldenrod;
+    border-bottom: 5px groove goldenrod;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.current-pic {
+    padding: 2%;
+}
+
+.current-name {
+    color: white;
+    display: block;
+    font-size: large;
+    align-self: center;
+    width: 120%;
+    transform: translateY(-80%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.current-seen {
+    color: whitesmoke;
+    padding-bottom: 5px;
+    font-size: large;
+    align-self: center;
+    transform: translate(100%, 70%);
+}
+
+.writing {
+    position: fixed;
+    height: fit-content;
+    align-self: flex-end;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    font-size: large;
+    transform: translate(-135%, 25%);
+}
+
+#all-messages {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 75%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#all-messages p {
+    display: block;
+    padding: 1%;
+    margin: 2% 2%;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: larger;
+    position: relative;
+}
+
+#all-messages p.left {
+    background-color: #5790DF;
+    color: white;
+    margin-right: auto;
+}
+
+#all-messages p.right {
+    background-color: white;
+    color: #5790DF;
+    margin-left: auto;
+}
+
+.media-left, .media-right {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    margin: 2% 2%;
+}
+
+
+.media-left {
+    align-self: flex-start;
+}
+
+.media-right {
+    align-self: flex-end;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+textarea {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 2%;
+    font-size: larger;
+}
+
+.main-footer button {
+    padding: 5px;
+    margin-bottom: 2%;
+    font-size: 225%;
+}
+
+.send-message {
+    background-color: #5790DF;
+    color: white;
+}
+
+.send-record, .send-photo {
+    padding: 0;
+    width: 5%;
+    height: 5%;
+    align-self: center;
+}
+
+.send-record img, .send-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.select {
+    font-size: 7vw;
+    margin: 20px;
+}
+
+#message {
+    position: fixed;
+    bottom: 5%;
+    right: 3.5%;
+    font-size: 72px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+aside {
+    width: 30%;
+    overflow: hidden auto;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+.aside-header {
+    text-align: center;
+    color: goldenrod;
+    font-size: xx-large;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#logo .chat-pic {
+    width: 20%;
+    height: 20%;
+}
+
+#logo .Talki {
+    align-self: center;
+    text-shadow: 2px 2px 4px gold;
+    margin-left: 5px;
+}
+
+.the-user {
+    display: block;
+    border-bottom: 5px solid goldenrod;
+    margin-bottom: 5px;
+}
+
+.chat {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    width: 98%;
+    height: 15%;
+    border-bottom: 5px solid #E6EEFA;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.chat:hover {
+    background-color: #E6EEFA;
+}
+
+img {
+    margin-right: 5px;
+    align-self: center;
+    width: 30%;
+    height: 80%;
+}
+
+.user-name {
+    align-self: flex-start;
+    margin-top: 5%;
+    width: 52%;
+    font-size: larger;
+}
+
+.last-seen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 7% 1.5% 0 0;
+    font-size: medium;
+    color: #797C7B;
+}
+
+.notification {
+    background-color: red;
+    color: white;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 37.5%;
+    right: 1%;
+}
+
+.content {
+    position: absolute;
+    bottom: 18%;
+    left: 32%;
+    width: 65%;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    aside {
+        width: 35%;
+    }
+
+    article {
+        width: 65%;
+    }
+
+    .chat-pic {
+        width: 25%;
+        height: 75%;
+    }
+
+    .content {
+        left: 28%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    aside {
+        width: 100%;
+    }
+
+    #message {
+        position: fixed;
+        top: 15%;
+        right: 3.5%;
+        height: fit-content;
+        height: -moz-fit-content;
+        font-size: xx-large;
+        background-color: goldenrod;
+        border-radius: 10px;
+    }
+
+    textarea {
+        width: 55%;
+        padding: 5px;
+    }
+
+    .current-user {
+        width: 80%;
+    }
+
+    .send-record, .send-photo {
+        width: 10%;
+    }
+
+    @keyframes show {
+
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+    
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    
+    }
+    
+    @keyframes hide {
+    
+        from {
+            transform: translateX(-100%);
+            opacity: 1;
+        }
+    
+        to {
+            transform: translateX(0%);
+            opacity: 0;
+        }
+    
+    }
+
+    .select {
+        display: none;
+    }
+
+}

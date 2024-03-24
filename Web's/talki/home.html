@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="chat.svg">
+    <link rel="stylesheet" href="home.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="home.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <header class="main-header">
+                <button id="X">X</button>
+                <div class="current-user">
+                    <img class="current-pic" src="account.png" alt="">
+                    <span class="writing">writing...</span>
+                    <span class="current-name"></span>
+                    <span class="current-seen"></span>
+                </div>
+            </header>
+            <section id="all-messages">
+                <p class="left">aaa<br></p>
+                <p class="left">ccc<br></p>
+                <p class="right">ppp<br></p>
+                <p class="left">ttt<br></p>
+                <p class="left">ttt<br></p>
+                <p class="left">ttt<br></p>
+                <p class="right">qqq<br></p>
+                <p class="right">qqq<br></p>
+                <p class="right">qqq<br></p>
+                <p class="right">qqq<br></p>
+                <img class="media-right" src="account.png"><br>
+            </section>
+            <footer class="main-footer">
+                <button class="send-photo" title="Send image or video"><img src="camera.png"></button>
+                <input type="file" id="image" name="image" accept="image/*,video/*" style="display: none;">
+                <button class="send-record"><img src="record.png"></button>
+                <button class="send-message">&lt;&lt;</button>
+                <textarea name="write-message"></textarea>
+            </footer>
+        </article>
+        <span class="select">select chat to begin !</span>
+        <button id="message" title="Send message to new user">+</button>
+    </main>
+    <aside>
+        <header class="aside-header">
+            <div id="logo">
+                <img id="logo-pic" src="chat.svg" alt="">
+                <span class="Talki">Talki !</span>
+            </div>
+            <span class="the-user">
+                <script>document.write((localStorage.getItem("inputName") || "User") + "'s Chats");</script>
+            </span>
+        </header>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy qwerttuty</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">6:51 am</span>
+            <span class="notification">2</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <!-- <span class="notification">1</span> -->
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">6:51 am</span>
+            <span class="notification">2</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <!-- <span class="notification">1</span> -->
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">6:51 am</span>
+            <span class="notification">2</span>
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <!-- <span class="notification">1</span> -->
+            <span class="content"></span>
+        </div>
+        <div class="chat">
+            <img class="chat-pic" src="account.png" alt="">
+            <span class="user-name">ahmed mousa qqqqqqq yyyyyyy</span>
+            <span class="last-seen">8:10 pm</span>
+            <span class="notification">1</span>
+            <span class="content"></span>
+        </div>
+    </aside>
+    <script>
+        $(() => {
+            var data = localStorage.getItem("inputName");
+            if (data) {
+                document.title = data;
+            } else {
+                document.title = "Home"
+            }
+            $(".chat").on("click", function () {
+                $(".chat").css("background-color", "");
+                $(this).css("background-color", "#bfd6f8");
+                $(this).find(".notification").css("display", "none");
+                $("article").css("animation", "show 0.4s ease");
+                $("article").css("display", "initial");
+                $("#message").css("display", "none");
+                $(".current-name").text($(this).find(".user-name").text());
+                $(".current-seen").text($(this).find(".last-seen").text());
+                $("#all-messages").scrollTop($("#all-messages")[0].scrollHeight);
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    $("article").css("width", "100%");
+                    $("aside").css("display", "none");
+                }
+            });
+            $("article #X").on("click", function () {
+                $("article").css("animation", "hide 0.4s ease");
+                setTimeout(function () {
+                    $("article").css("display", "none");
+                    $("#message").css("display", "initial");
+                }, 380);
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    $("aside").css("display", "initial");
+                }
+            });
+            $("#message").on("click", function (e) {
+                let a = prompt("Enter email or phone number: ");
+                if (!a) {
+                    e.preventDefault();
+                }
+            });
+            $(".send-photo").on("click", function () {
+                $("#image").click();
+            });
+            $(".send-message").on("click", function () {
+                if ($('textarea').val()) {
+                    $("#all-messages").append(`<p class="left">${$('textarea').val().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>")}<br></p>`);
+                    $('textarea').val("");
+                    $("#all-messages").scrollTop($("#all-messages")[0].scrollHeight);
+                }
+            });
+            $('#image').change(function (event) {
+                const fileInput = $(this);
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = function (event) {
+                        const fileUrl = event.target.result;
+                        const fileType = file.type.split('/')[0];
+                        if (fileType === 'image' || fileType === 'video') {
+                            if (fileType === 'image') {
+                                $("#all-messages").append(`<img class="media-left" src="${fileUrl}"><br>`);
+                            } else if (fileType === 'video') {
+                                $("#all-messages").append(`<video class="media-left" src="${fileUrl}" controls></video><br>`);
+                            }
+                            $("#all-messages").scrollTop($("#all-messages")[0].scrollHeight);
+                            fileInput.val(null);
+                        } else {
+                            alert("Unsupported file type. Please select an image or video.");
+                        }
+                    };
+                }
+            });
+            if ($("#all-messages :last-child").is("p")) {
+                if ($("#all-messages :last-child").hasClass("left")) {
+                    $(".content").append(`&gt;&gt;&nbsp;&nbsp; ${$("#all-messages :last-child").text()}`);
+                } else if ($("#all-messages :last-child").hasClass("right")) {
+                    $(".content").append(`&lt;&lt;&nbsp;&nbsp; ${$("#all-messages :last-child").text()}`);
+                }
+            } else if ($("#all-messages").children().eq(-2).is("img, video")) {
+                if ($("#all-messages").children().eq(-2).hasClass("media-left")) {
+                    $(".content").append(`&gt;&gt;&nbsp;&nbsp; (media)`);
+                } else if ($("#all-messages").children().eq(-2).hasClass("media-right")) {
+                    $(".content").append(`&lt;&lt;&nbsp;&nbsp; (media)`);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

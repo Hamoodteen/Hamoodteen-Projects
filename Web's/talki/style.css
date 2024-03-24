@@ -70,7 +70,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     input[name="log-email"] {left: 10%;}
-    
+
     input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 40cap;}
@@ -80,13 +80,13 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     input[name="log-submit"] {top: 18cap;}
 
     input[name="sign-name"] {top: 1cap;}
-    
+
     input[name="tel"] {top: 1cap;}
-    
+
     input[name="sign-email"] {top: 7cap;}
-    
+
     input[name="sign-password"] {top: 7cap;}
-    
+
     input[name="sign-confirm"] {top: 13cap;}
 
     label[for="image"] {top: 18cap;}
@@ -107,7 +107,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
 
     .account {font-size: larger;}
 
-	#back {top: -6cap !important;}
+        #back {top: -6cap !important;}
 
 }
 
@@ -120,7 +120,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     input[name="log-email"] {left: 10%;}
-    
+
     input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 32cap;}
@@ -130,13 +130,13 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     input[name="log-submit"] {top: 23cap;}
 
     input[name="sign-name"] {top: 1cap;}
-    
+
     input[name="tel"] {top: 1cap;}
-    
+
     input[name="sign-email"] {top: 7cap;}
-    
+
     input[name="sign-password"] {top: 7cap;}
-    
+
     input[name="sign-confirm"] {top: 13cap;}
 
     label[for="image"] {top: 13cap;}
@@ -155,7 +155,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 40cap;
     }
 
-	#back {top: -6cap !important;}
+        #back {top: -6cap !important;}
 
 }
 
@@ -168,7 +168,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     }
 
     input[name="log-email"] {left: 10%;}
-    
+
     input[name="log-password"] {right: 10%;}
 
     #remember-log {top: 28cap;}
@@ -178,13 +178,13 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     input[name="log-submit"] {top: 25cap;}
 
     input[name="sign-name"] {top: 0cap;}
-    
+
     input[name="tel"] {top: 0cap;}
-    
+
     input[name="sign-email"] {top: 5cap;}
-    
+
     input[name="sign-password"] {top: 5cap;}
-    
+
     input[name="sign-confirm"] {top: 10cap;}
 
     label[for="image"] {top: 8cap;}
@@ -195,7 +195,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 28cap;
         font-size: larger;
     }
-    
+
     footer {height: 22%;}
 
     #Facebook, #Google {
@@ -203,17 +203,18 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 33cap;
     }
 
-	#back {top: -6cap !important;}
+        #back {top: -6cap !important;}
 
 }
 
 @media (max-width: 1023px) {
+
     * {
         font-family: Arial, sans-serif !important;
     }
 
     .unleash {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="submit"] {
@@ -228,7 +229,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
     input[name="log-email"] {
         top: 18cap;
     }
-    
+
     input[name="log-password"] {
         top: 25cap;
     }
@@ -249,20 +250,20 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         left: 50% !important;
         top: 0cap !important;
     }
-    
+
     input[name="tel"] {
         top: 5cap !important;
     }
-    
+
     input[name="sign-email"] {
         left: 50% !important;
         top: 10cap !important;
     }
-    
+
     input[name="sign-password"] {
         top: 17cap !important;
     }
-    
+
     input[name="sign-confirm"] {
         top: 22cap !important;
     }
@@ -279,7 +280,7 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         top: 35cap;
         font-size: larger;
     }
-    
+
     footer {
     display: none;
     }
@@ -295,9 +296,9 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
         text-align: center;
     }
 
-	#back {
-		top: -6cap !important;
-	}
+    #back {
+        top: -6cap !important;
+    }
 
 }
 
