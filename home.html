@@ -153,7 +153,7 @@
             if (window.matchMedia("(max-width: 767px)").matches) {
                 $(window).scroll(function() {
                     if ($(this).scrollTop() === 0) {
-                        $('#message').css("display", "fixed");
+                        $('#message').css("display", "initial");
                     } else {
                         $('#message').css("display", "none");
                     }
