@@ -153,9 +153,9 @@
             if (window.matchMedia("(max-width: 767px)").matches) {
                 $(window).scroll(function() {
                     if ($(this).scrollTop() === 0) {
-                        $('#message').show();
+                        $('#message').css("display", "fixed");
                     } else {
-                        $('#message').hide();
+                        $('#message').css("display", "none");
                     }
                 });
             }
