@@ -150,6 +150,15 @@
             } else {
                 document.title = "Home"
             }
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() === 0) {
+                        $('#message').show();
+                    } else {
+                        $('#message').hide();
+                    }
+                });
+            }
             $(".chat").on("click", function () {
                 $(".chat").css("background-color", "");
                 $(this).css("background-color", "#bfd6f8");
