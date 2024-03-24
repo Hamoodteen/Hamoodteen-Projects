@@ -186,7 +186,7 @@
             });
             $(".send-message").on("click", function () {
                 if ($('textarea').val()) {
-                    $("#all-messages").append(`<p class="left">${$('textarea').val().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>")}<br></p>`);
+                    $("#all-messages").append(`<p class="left">${$('textarea').val().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>").replace(/ /g, "&nbsp;")}<br></p>`);
                     $('textarea').val("");
                     $("#all-messages").scrollTop($("#all-messages")[0].scrollHeight);
                 }
