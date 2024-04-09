@@ -93,6 +93,11 @@
                 $('label[for="image"]').attr('data-content', fileName);
             });
             $('input[name="sign-submit"]').on("click", function (e) {
+				if ($('input[name="sign-email"]').val().trim() !== '' &&
+				$('input[name="sign-email"]').val().match(/\w+@\w+\.\w+/i) === null) {
+					alert("invalid email");
+					e.preventDefault();
+				}
                 if ($('input[name="sign-password"]').val() !== $('input[name="sign-confirm"]').val()) {
                     alert("password not matching");
                     e.preventDefault();
